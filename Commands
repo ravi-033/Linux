@@ -6,28 +6,63 @@ ls -lasrth
 ll     
 
 
-# File system
-df -h   #disk free space check
-du -sh   # disk usage space check
+
 
 # Process
 grep -i 'image' output.log
-ps aux | grep "PID"
-ps aux --sort=%mem,%cpu
-ps -ef | grep "PID"
 
-kill -9 "PID"   #kill a process with ID
-pkill "Process_Name"  #kill a process with name
+
+
+
 
 #copy 
-cp -rp /host_path /destination_path   #copy within the same server
-scp -rp /host_path /destination_path    #copy between 2 different servers
+cp -rp /host_path /destination_path           #copy within the same server
+scp -rp /host_path /destination_path          #copy between 2 different servers
 scp -rp /destination_path/file_name.txt .     #copying file from a different server to the present working directory (.)
 
 #move
 mv /host_path /destination_path
 
-#
+
+###STORAGE COMMANDS###
+df -h               #disk free space check
+du -sh .            #disk usage space check of present working directory (.)
+du -sh /path_name   #disk space check for specific path (File/directory)
+free -h             #memory and swap space check in human-readable format
+free -m 
+mkfs.ext4 /dev/sdb1        #create ext4 filesystem 
+mount /dev/sdb1 /mnt/data  #mounting
+umount /mnt/data           #umounting
+
+
+###PROCESS MANAGEMENT COMMANDS###
+top                  #cpu and memory info
+htop                 #similar to top in a more graphical way 
+ps aux               #list all processes
+ps aux --sort=%mem,%cpu
+ps -ef | grep "PID"
+kill "PID"
+kill -9 "PID"              #kill a process with PID (force kill)
+pkill "Process_Name"       #kill a process with name
+who
+w
+last
+whoami
+
+
+
+###NETWORK COMMANDS###
+ping URL                   #checking network connectivity between 2 servers
+traceroute                 #tracing the domain info
+telnet
+ifconfig
+ip -a
+dig
+wget                       #download files from the internet
+curl                       
+
+
+
 
 
 
