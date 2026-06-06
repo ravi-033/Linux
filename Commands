@@ -1,18 +1,34 @@
-#Basic
+###FILE MANAGEMENT COMMANDS###
 cd     #change directory
 ls     #list files and directories
 ls -a  #list hidden files
 ls -lasrth
-ll     
-
-
-
+ll  
+touch
+mkdir
+rm
+rmdir
+vi
+nano
+tar
+zip
+gzip
+ln
+find
+wc
+sed
+awx
+chmod
+chown
+head
+tail
+more
+less
+cat
+locate
 
 # Process
 grep -i 'image' output.log
-
-
-
 
 
 #copy 
@@ -44,10 +60,6 @@ ps -ef | grep "PID"
 kill "PID"
 kill -9 "PID"              #kill a process with PID (force kill)
 pkill "Process_Name"       #kill a process with name
-who
-w
-last
-whoami
 
 
 
@@ -59,7 +71,40 @@ ifconfig
 ip -a
 dig
 wget                       #download files from the internet
-curl                       
+curl         
+
+
+
+###USER MANAGEMENT COMMANDS###
+useradd
+groupadd
+passwd
+userdel
+adduser
+groupdel
+usermod
+gpasswd
+su
+id
+who
+w
+last
+whoami
+
+
+
+###USER MANAGEMENT COMMANDS###
+systemctl
+ssh-keygen
+
+
+
+
+###PACKAGE MANAGEMENT COMMANDS###
+apt                    #ubuntu/debian
+yum/dnf                #rhel/cent-os/fedora
+
+
 
 
 
