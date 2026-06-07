@@ -55,6 +55,7 @@ sudo -i #switch user
 grep -i 'image' output.log
 grep image output.log
 grep -n 'image' output.log
+grep -o "s" output.log
 
 
 
