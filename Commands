@@ -49,6 +49,7 @@ less
 cat
 locate
 awk
+sudo -i #switch user
 
 #filter output 
 grep -i 'image' output.log
