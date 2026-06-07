@@ -31,6 +31,7 @@ ln -l                   #hard symbolic link
 
 find /path_name -type f -name "*.log" -msize +500M -exec rm -rf {} \;
 find /path_name -name "*.log" | xargs ls -larth
+find . -name "*.txt" -mtime 1
 
 wc -l
 wc -n
