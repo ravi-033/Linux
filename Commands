@@ -4,10 +4,12 @@ ls     #list files and directories
 ls -a  #list hidden files
 ls -lasrth
 ll  
-touch
-mkdir
-rm
-rmdir
+touch <file_name>         #create file
+mkdir <dir_name>          #create directory
+mkdir -p /dir1/dir2/dir3  #multiple directory creation
+rm <file_name>            #remove file
+rm -f <file_name>         #forceful deletion
+rmdir 
 vi
 nano
 tar
