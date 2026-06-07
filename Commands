@@ -47,6 +47,7 @@ more
 less
 cat
 locate
+awk
 
 # Process
 grep -i 'image' output.log
@@ -81,6 +82,7 @@ ps -ef | grep "PID"
 kill "PID"
 kill -9 "PID"              #kill a process with PID (force kill)
 pkill "Process_Name"       #kill a process with name
+nproc                      #cpu processes 
 
 
 
