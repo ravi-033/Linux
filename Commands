@@ -93,8 +93,8 @@ telnet
 ifconfig
 ip -a
 dig
-wget                       #download files from the internet
-curl                       #provide info from external 
+wget <URL>                     #download files from the internet
+curl <URL>                      #provide info from external 
 
 
 
