@@ -1,0 +1,6 @@
+1. What are the most commonly used commands in your project?
+ls, cp, mv, scp, rm, mkdir, touch, vi, df, du -sh, find, grep
+
+2. print errors from remote log?
+curl <URL> | grep -i 'error'
+
