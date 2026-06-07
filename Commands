@@ -94,7 +94,7 @@ ifconfig
 ip -a
 dig
 wget                       #download files from the internet
-curl         
+curl                       #provide info from external 
 
 
 
