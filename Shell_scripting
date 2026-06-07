@@ -1,5 +1,5 @@
 set -x #debug mode
-set -o
-set -e
+set -o #pipefail
+set -e  #exit the script when there is an error
 
 ps -ef | grep <process_name> | awx -F" " '{print $2}'
