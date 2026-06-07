@@ -50,8 +50,11 @@ cat
 locate
 awk
 
-# Process
+#filter output 
 grep -i 'image' output.log
+grep image output.log
+grep -n 'image' output.log
+
 
 
 #copy 
