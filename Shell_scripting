@@ -1,0 +1,3 @@
+set -x #debug mode
+
+ps -ef | grep <process_name> | awx -F" " '{print $2}'
