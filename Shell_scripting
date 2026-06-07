@@ -3,3 +3,6 @@ set -o #pipefail
 set -e  #exit the script when there is an error
 
 ps -ef | grep <process_name> | awk -F" " '{print $2}'
+
+
+
