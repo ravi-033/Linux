@@ -17,4 +17,8 @@ for i in {1..100}; do
 done
 
 
-5. 
+5. What is crontab in linux?
+Crontab helps in scheduling tasks automatically. 
+
+6. How will you debug shell scrpt?
+set -x
