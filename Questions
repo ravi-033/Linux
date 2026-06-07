@@ -4,3 +4,17 @@ ls, cp, mv, scp, rm, mkdir, touch, vi, df, du -sh, find, grep
 2. print errors from remote log?
 curl <URL> | grep -i 'error'
 
+3. Print only process id of particular process?
+ps -ef | grep 'process_name' | awk -F" " '{print $2}'
+
+4. Write a shell script to print numbers divide by 3 & 5 but not by 15?
+#!/bin/bash
+
+for i in {1..100}; do
+    if (( (i % 3 == 0 || i % 5 == 0) && i % 15 != 0 )); then
+        echo $i
+    fi
+done
+
+
+5. 
