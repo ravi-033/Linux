@@ -22,3 +22,11 @@ Crontab helps in scheduling tasks automatically.
 
 6. How will you debug shell scrpt?
 set -x
+
+7. how will you open a file in read-only mode?
+vim -R <file_name>
+less <file_name>
+cat <file_name>
+
+8. Difference between hard and soft link?
+
