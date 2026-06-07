@@ -1,9 +1,13 @@
 ###FILE MANAGEMENT COMMANDS###
-cd     #change directory
-ls     #list files and directories
-ls -a  #list hidden files
+cd               #change directory
+pwd              #Present working directory
+history          #previous used commands
+clear            #clear screen
+ls               #list files and directories
+ls -a            #list hidden files
 ls -lasrth
 ll  
+
 touch <file_name>         #create file
 
 mkdir <dir_name>          #create directory
@@ -14,19 +18,29 @@ rm -f <file_name>         #forceful deletion
 rmdir <dir_name>          #empty dir deletion
 rm -rf <dir_name>         #recuressively removes files and directory
 
-vi 
-vim
-nano
+vi <file_name>            #create and open file
+vim <file_name>
+nano <file_name>
+
 tar
 zip
 gzip
-ln
-find
-wc
+
+ln -s                   #soft symbolic link
+ln -l                   #hard symbolic link
+
+find /path_name -type f -name "*.log" -msize +500M -exec rm -rf {} \;
+find /path_name -name "*.log" | xargs ls -larth
+
+wc -l
+wc -n
+wc -c
+
 sed
 awx
 chmod
 chown
+chgrp
 head
 tail
 more
